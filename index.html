@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="https://assets.aftership.com/couriers/svg/oca-ar.svg" />
+    <title>OCA</title>
+</head>
+<body>
+    <!--SECCION NAVBAR-->
+    <header>
+        <div class="navbar">
+        </div>
+        <nav id="navbar" class="navbar">
+            <a href="#inicio">Inicio</a>
+            <a href="#sobreNosotros">Sobre Nosotros</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#comoLlegar">¿Cómo llegar?</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <!--SECCION INICIO-->
+    <section class="container" id="inicio">
+
+        <div class="container">
+            <h1 class="simplifica"><strong>Simplificá</strong></h1>
+            <h2  id="envios">tus envíos y
+                hacé crecer
+                tu negocio</h2>
+                <img src="https://www.oca.com.ar/productos-ecommerce/images/oca-gif.gif" alt="gifOca">
+        </div>
+    </section>
+
+    <!--SECCION SOBRE NOSOTROS-->
+
+    <section class="container" id="sobreNosotros">
+        <div class="contenido-seccion">
+            <h2 >SOBRE NOSOTROS</h2>
+            <h3>OCA es una empresa líder en logística y servicios postales en Argentina, fundada en 1957. Nuestro equipo está compuesto por profesionales dedicados a brindar soluciones innovadoras y eficientes en el ámbito del transporte y la distribución. Con más de seis décadas de experiencia, nos comprometemos a ofrecer un servicio de calidad y a satisfacer las necesidades de nuestros clientes.</h3>
+            <img src="imagenes/OCA ENTREGA.png" alt="OcaEntrega">
+
+        </div>
+    </section>
+
+    <!--SECCION SERVICIOS-->
+
+    <section class="container" id="servicios">
+        <div class="servicios">
+            <h2>SERVICIOS</h2>
+            <img src="imagenes/Mapa Argentina OCA.png" alt="MapaOca">
+            <img src="imagenes/ENTREGA 24HS.png" alt="entrega24">
+        </div>
+    </section>
+
+    <!--SECCION COMO LLEGAR-->
+
+    <section id="comoLlegar" class="container">
+        <div>
+            <h1>¿CÓMO LLEGAR?</h1>
+            <div class="mapa"><iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.3242684433108!2d-58.19424480199814!3d-26.186127846003746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945caf57da500243%3A0x70572dc156d26238!2sOCA!5e0!3m2!1ses-419!2sar!4v1717341766432!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        </div>
+    </section>
+
+    <!--SECCION CONTACTO-->
+
+    <section id="contacto" class="contacto">
+        <h1>¡Envía a todo el país con OCA!</h1>
+        <p>Completá el formulario y te enviaremos una propuesta personalizada.</p>
+        <form action="enviar.php" method="post">
+            <div class="form-group">
+                <label for="nombre">Nombre y Apellido *</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono *</label>
+                <input type="text" id="telefono" name="telefono" required>
+            </div>
+            <div class="form-group">
+                <label for="volumen">Volumen de envíos</label>
+                <select id="volumen" name="volumen">
+                    <option value="" disabled selected>Seleccione una opción</option>
+                    <option value="-50">1 - 50 envíos mensuales</option>
+                    <option value="50-100">50 - 100 envíos mensuales</option>
+                    <option value="100-200">100 - 200 envíos mensuales</option>
+                    <option value="+200">+200 envíos mensuales</option>
+                </select>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+</body>
+</html>

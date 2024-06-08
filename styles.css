@@ -36,6 +36,20 @@ body, html {
     border-radius: 4px;
 }
 
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navbar a {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+}
+
 /* Sección Inicio */
 #inicio {
     background-color: #f0f0f0;
